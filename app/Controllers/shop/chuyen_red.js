@@ -55,8 +55,8 @@ module.exports = function(client, data){
 												if (user == null || (user.red-10000 < red)) {
 													client.red({notice:{title:'CHUYỂN BitCoin',text:'Số dư không khả dụng.!!'}});
 												}else{
-													client.red({notice:{title:'CHUYỂN BitCoin', text:'Tài khoản Bạn chưa đủ điều kiện để chuyển tiền hãy online  48h và nạp ít nhất 300K vào tài khoản'}});
-													return;
+													//client.red({notice:{title:'CHUYỂN BitCoin', text:'Tài khoản Bạn chưa đủ điều kiện để chuyển tiền hãy online  48h và nạp ít nhất 300K vào tài khoản'}});
+													//return;
 													UserInfo.updateOne({id: client.UID}, {$inc:{red:-red}}).exec();
 													client.red({notice:{title:'CHUYỂN BitCoin', text: 'Giao dịch thành công.!!'}, user:{red:user.red-red}});
 													var thanhTien = !!daily ? red : Helper.anPhanTram(red, 1, 2);
