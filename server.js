@@ -5,7 +5,7 @@ require('dotenv').config();
 process.env.NTBA_FIX_319 = 1;
 let Telegram      = require('node-telegram-bot-api');
 //let TelegramToken = '987211295:AAGlIN124PtI_g3VXSWXczTrc_ri9BBx-ek';
-let TelegramToken = '1899272485:AAEbd1HIxWCKJFgwWaRrQf8FdFfd7ckC1hY';
+let TelegramToken = '1986836989:AAEtEz9mhdVkozhx-pBS5QlGRDTpPpn_eic';
 let TelegramCheckUseronlineToken = '1729360867:AAEhDmSiNPO0YFcWghAW-mfGRY0Go';
 
 let TelegramBot   = new Telegram(TelegramToken, {polling: true});
